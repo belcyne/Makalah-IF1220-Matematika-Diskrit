@@ -28,7 +28,7 @@ def export_overlay(img, mask, filename):
 
 img = cv2.imread('assets/raw_saxophone.png')
 
-sx, sy, thresh = 150, 100, 45.0 
+sx, sy, thresh = 552, 312, 40
 
 export_overlay(img, generate_mask(img, sx, sy, thresh, False), 'assets/mask_4conn.png')
 export_overlay(img, generate_mask(img, sx, sy, thresh, True),  'assets/mask_8conn.png')
